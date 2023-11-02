@@ -91,6 +91,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/yaz-ui",
+            "netlifyToken": "bJux3Ljna4BT5873kzJzbOo8oyQMoleYerRoH4dZdtA",
+            "siteId": "ff096674-44d8-451d-b813-aba2cdd4fe9a"
+          }
         }
       }
     }

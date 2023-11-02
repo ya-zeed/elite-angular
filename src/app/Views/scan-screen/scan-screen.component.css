@@ -1,0 +1,32 @@
+.box{
+    min-height: 150px;
+    min-width:86%;
+
+    border-radius: 20px;
+    background-color: transparent;
+}
+.s-box{
+    border-radius: 20px;
+
+}
+.f-box{
+    border-radius: 20px;
+  font-weight: 800;
+  background-color: transparent;
+}
+.arrow{
+    width: 30px !important;
+    height: 100% !important;
+}
+span{
+    color: black;
+}
+.texts {
+    color: #f5494c !important;
+}
+@media screen and (max-width:375px) {
+    .texts{
+font-size: 10px;
+
+    }
+}

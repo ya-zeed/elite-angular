@@ -1,0 +1,31 @@
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+button {
+    min-width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: #f96163;
+    color: white;
+
+}
+button:focus {
+    background-color: #f5494c;
+    
+    color: white;  
+}
+
+
+.bio {
+    color: #f96163;
+}
+
+.home{
+    overflow-y: hidden;
+}
