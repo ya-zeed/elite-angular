@@ -5,6 +5,29 @@
     align-items: center;
     align-content: center;
 }
+@keyframes example {
+    50%   {background-color: #f96163;}
+    50% {color: #fff;}
+  }
+  @keyframes bio {
+    50% {color: #fff;}
+  }
+  @keyframes button {
+    50% {color: #f96163 ;}
+    50% {background-color: #fff;}
+  }
+
+
+  /* The element to apply the animation to */
+  .home {
+    animation-name: example;
+    animation-duration: 2.5s;
+  }
+  .bio {
+      color: #f96163;
+      animation-name: bio;
+      animation-duration: 2.5s;
+  }
 
 button {
     min-width: 200px;
@@ -13,6 +36,8 @@ button {
     border-radius: 7px;
     background-color: #f96163;
     color: white;
+    animation-name: button;
+    animation-duration: 2.5s;
 
 }
 button:focus {
@@ -22,9 +47,6 @@ button:focus {
 }
 
 
-.bio {
-    color: #f96163;
-}
 
 .home{
     overflow-y: hidden;
