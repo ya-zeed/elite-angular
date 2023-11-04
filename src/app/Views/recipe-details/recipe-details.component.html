@@ -1,0 +1,10 @@
+<div *ngIf="!recipeDerails">
+    <div>
+        <p class="lead text-dark text-center mt-4">اختار اللغة المطلوبة </p>
+    </div>
+    <div  class="row text-center">
+        <div *ngFor="let i of recivedData">
+            <button class="btn " (click)="getLang(i.language,i.id)">{{i.language}}</button>
+        </div>
+    </div></div>
+<ingredients  [ingredients]="recipeDerails"></ingredients>

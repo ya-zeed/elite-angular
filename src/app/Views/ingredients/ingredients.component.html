@@ -1,0 +1,30 @@
+<div class="bg-transparent" *ngIf="ingredients">
+    <nav  class="navbar">
+        <div class="container-fluid">
+            <span routerLink="" class="arrow mt-4"><img src="assets/filter-left.svg" alt=""></span>
+        </div>
+    </nav>
+    <div>
+         <h6 class="lead title text-center p-2">{{ingredients.title}}</h6>
+<div class="ing-box">
+   <div class="d-flex p-2  justify-content-center align-items-center">
+    <br>
+    <div class="p-2">
+    <div class="ing-des text-dark lead "  [innerHTML]="ingredients.content"></div> 
+    </div> 
+   </div> 
+</div>  
+    </div>
+ 
+</div>
+
+
+<style>
+   *{
+    scroll-behavior: smooth;
+    scrollbar-color: #76d5c1;
+   }
+    .title{
+        color: #76d5c1;
+    }
+</style>

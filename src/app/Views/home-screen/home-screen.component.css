@@ -6,25 +6,22 @@
     align-content: center;
 }
 @keyframes example {
-    50%   {background-color: #f96163;}
+    50%   {background-color: #76d5c1;}
     50% {color: #fff;}
   }
   @keyframes bio {
     50% {color: #fff;}
   }
   @keyframes button {
-    50% {color: #f96163 ;}
+    50% {color: #76d5c1 ;}
     50% {background-color: #fff;}
   }
 
 
   /* The element to apply the animation to */
-  .home {
-    animation-name: example;
-    animation-duration: 2.5s;
-  }
+ 
   .bio {
-      color: #f96163;
+      color: #76d5c1;
       animation-name: bio;
       animation-duration: 2.5s;
   }
@@ -34,14 +31,14 @@ button {
     height: 50px;
     border: none;
     border-radius: 7px;
-    background-color: #f96163;
+    background-color: #76d5c1;
     color: white;
     animation-name: button;
     animation-duration: 2.5s;
 
 }
 button:focus {
-    background-color: #f5494c;
+    background-color: #76d5c1;
     
     color: white;  
 }
@@ -49,5 +46,6 @@ button:focus {
 
 
 .home{
-    overflow-y: hidden;
+    overflow: hidden;
+
 }

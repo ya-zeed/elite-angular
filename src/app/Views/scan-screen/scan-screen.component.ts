@@ -1,39 +1,35 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
 import { RecipesApiService } from 'src/app/api/recipes-api.service';
-import { recipesDetails } from 'src/app/interface/recipesDetails.interface';
-import { BarcodeFormat } from '@zxing/library';
 
 @Component({
   selector: 'scan-screen',
   templateUrl: './scan-screen.component.html',
-  styleUrls: ['./scan-screen.component.css']
+  styleUrls: ['./scan-screen.component.css'],
 })
-export class ScanScreenComponent implements OnInit{
-  allowedFormats = [ BarcodeFormat.QR_CODE, BarcodeFormat.EAN_13, BarcodeFormat.CODE_128, BarcodeFormat.DATA_MATRIX /*, ...*/ ];
-
+export class ScanScreenComponent implements OnInit {
+ 
   options: AnimationOptions = {
     path: '/assets/lottie_twoo.json',
-    
   };
-
+  constructor(
+    private recipeService: RecipesApiService,
+  ) {}
+  torchEnabled = false;
+  qrResultString : any ;
+  toggleTorch(): void {
+    this.torchEnabled = !this.torchEnabled;
+  }
+  scanSuccessHandler(e: any) {
+    console.log(e);
+    this.recipeService.getRecipe(e)
+  }
+  clearResult(): void {
+    this.qrResultString = null;
+  }
+  ngOnInit() {}
  
-  src!: string;
 
-  arr:recipesDetails [] =[];
-  constructor (private recipeService: RecipesApiService) {}
-  ngOnInit() { this.recipeService.getRecipe(120).subscribe((res:any) => {
-      this.arr = res.data;
-      console.log(this.arr);
-    });
-  }
-  getLang(language:string,index:number){
-   this.recipeService.getLanguage(language,index)
-  }
-  
-
-
-  animationCreated(animationItem: AnimationItem):void {
-  }
+  animationCreated(animationItem: AnimationItem): void {}
 }

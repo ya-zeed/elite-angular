@@ -22,7 +22,7 @@ span{
     color: black;
 }
 .texts {
-    color: #f5494c !important;
+    color: #76d5c1 !important;
 }
 @media screen and (max-width:375px) {
     .texts{
@@ -33,5 +33,33 @@ font-size: 10px;
     *{
         overflow: hidden;
     }
+    .succes {
+        border: 6px solid green;
+    }
+    zxing-scanner{
+        border-radius: 23px;
+    }
+
+    .cam-box {
+        height: 307px;
+        
+    }
+
+    button {
+        width: 200px;
+        height: 40px;
+        font-weight: 700;
+        border: 1px solid #76d5c1;
+        color: #76d5c1;
+        background-color: #ffffff;
+    }
+
+    button:hover {
+        border: 1px solid #fff;
+        color: #fff;
+        background-color: #76d5c1;
+    }
+
+
   
 }
