@@ -18,7 +18,7 @@ jobs:
         node-version: '16'  # Or the Node.js version your project uses
 
     - name: Install Dependencies
-      run: npm install
+      run: npm install -f
 
     - name: Build Angular App
       run: npm run build -- --prod
