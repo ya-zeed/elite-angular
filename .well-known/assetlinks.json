@@ -1,0 +1,8 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "sa.yt.elite_f.twa",
+      "sha256_cert_fingerprints": ["41:28:38:89:A5:27:11:7F:68:48:8F:18:6F:FB:94:18:40:59:44:1B:03:61:CE:87:CB:B0:42:ED:E1:9F:36:96"]
+    }
+  }]
