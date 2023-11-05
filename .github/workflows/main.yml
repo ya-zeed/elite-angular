@@ -31,4 +31,4 @@ jobs:
         key: ${{ secrets.DIGITALOCEAN_SSH_KEY }}
         port: 22  # Default SSH port, change if yours is different
         source: "dist/*"
-        target: "/home/elite-angular/dist/yaz-ui"
+        target: "/var/www/elite-f.yt.sa/dist/yaz-ui/"
