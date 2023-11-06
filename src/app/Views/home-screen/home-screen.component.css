@@ -33,7 +33,7 @@ button {
     border-radius: 7px;
     background-color: #76d5c1;
     color: white;
-    animation-name: button;
+    /* animation-name: button; */
     animation-duration: 2.5s;
 
 }
