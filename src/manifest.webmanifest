@@ -1,8 +1,8 @@
 {
   "name": "نخبة الأطباق",
   "short_name": "نخبة الأطباق",
-  "theme_color": "#76d5c1",
-  "background_color": "#76d5c1",
+  "theme_color": "#fff",
+  "background_color": "#fff",
   "display":"fullscreen",
   "scope": "./",
   "start_url": "./",
